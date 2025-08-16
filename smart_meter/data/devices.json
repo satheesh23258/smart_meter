@@ -1,0 +1,41 @@
+[
+  {
+    "id": "6b3fc789-c8a3-4420-94eb-a772e69c2eb8",
+    "userId": "6269104b-a3ee-4a3b-96b0-880626ea0db5",
+    "name": ", Living Room Fan",
+    "type": "general",
+    "status": "ON",
+    "color": "#A21FB1",
+    "createdAt": "2025-08-15T18:04:44.829Z",
+    "lastPower": 46.79,
+    "lastVoltage": 227.38,
+    "lastCurrent": 0.235,
+    "lastEnergyWh": 297.7529
+  },
+  {
+    "id": "cf90ba5c-77ee-4c87-9d58-3f7b4191940f",
+    "userId": "6269104b-a3ee-4a3b-96b0-880626ea0db5",
+    "name": "friege",
+    "type": "general",
+    "status": "ON",
+    "color": "#8BFFFD",
+    "createdAt": "2025-08-15T18:12:01.566Z",
+    "lastPower": 437.86,
+    "lastVoltage": 222.35,
+    "lastCurrent": 2.306,
+    "lastEnergyWh": 297.2905
+  },
+  {
+    "id": "f7bd7521-b755-43d7-96ac-1955e0ff730a",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "name": "FAN",
+    "type": "general",
+    "status": "OFF",
+    "color": "#0f4569",
+    "createdAt": "2025-08-15T18:59:22.128Z",
+    "lastPower": 55.09,
+    "lastVoltage": 224.43,
+    "lastCurrent": 0.265,
+    "lastEnergyWh": 35.4591
+  }
+]

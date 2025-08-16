@@ -1,0 +1,135 @@
+[
+  {
+    "id": "19aa0d83-af78-4f00-859f-33855528874c",
+    "userId": "USR848378",
+    "amount": 12000,
+    "dueDate": null,
+    "description": "",
+    "status": "PAID",
+    "createdAt": "2025-08-15T18:01:03.776Z",
+    "paidAt": "2025-08-15T18:02:26.417Z",
+    "paidBy": "6269104b-a3ee-4a3b-96b0-880626ea0db5",
+    "paymentMethod": "upi"
+  },
+  {
+    "id": "f114470b-f933-4d63-aa2a-bb978cf44a73",
+    "userId": "USR848378",
+    "amount": 1200,
+    "dueDate": null,
+    "description": "",
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T18:01:17.635Z"
+  },
+  {
+    "id": "adb68403-2dc5-4f9d-822f-72dede769c3c",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "deviceId": "f8acc904-bb02-474b-97bd-5e54b3b59bcc",
+    "amount": 1200,
+    "description": "Bill for Living Room Fan",
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T18:58:59.929Z",
+    "pendingPayment": {
+      "method": "upi",
+      "qrDataUrl": "data:image/png;base64,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",
+      "byUserId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+      "startedAt": "2025-08-15T18:59:07.988Z"
+    }
+  },
+  {
+    "id": "92f32851-f90e-4dc1-ba6c-a4b60dfaf668",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "deviceId": "f7bd7521-b755-43d7-96ac-1955e0ff730a",
+    "amount": 1300,
+    "description": "Bill for FAN",
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T18:59:27.030Z"
+  },
+  {
+    "id": "d095f360-14f4-44b9-8ad7-7a3d4ac5b2f4",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0.16,
+    "energyWh": 19.5365,
+    "kWh": 0.0195,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T19:21:11.540Z",
+    "paidAt": null
+  },
+  {
+    "id": "2b215cd6-53cc-4533-9e5d-1cceab305201",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0.01,
+    "energyWh": 1.0948,
+    "kWh": 0.0011,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T19:21:45.365Z",
+    "paidAt": null
+  },
+  {
+    "id": "0899e315-828f-4c04-b372-f02952d2b658",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0,
+    "energyWh": 0.6194,
+    "kWh": 0.0006,
+    "tariff": 8,
+    "status": "PAID",
+    "createdAt": "2025-08-15T19:21:58.889Z",
+    "paidAt": null
+  },
+  {
+    "id": "a5292fe5-32f8-4be8-862d-09f9ccbc0fc7",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0.01,
+    "energyWh": 0.9692,
+    "kWh": 0.001,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T19:22:19.079Z",
+    "paidAt": null
+  },
+  {
+    "id": "f62997d0-ec2d-4da6-8bc0-8b1c7ba49a52",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0.01,
+    "energyWh": 1.5177,
+    "kWh": 0.0015,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T19:23:05.650Z",
+    "paidAt": null
+  },
+  {
+    "id": "21be492e-0a8c-4c36-b670-fd812692b4ab",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0.07,
+    "energyWh": 8.4236,
+    "kWh": 0.0084,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-15T19:26:28.493Z",
+    "paidAt": null
+  },
+  {
+    "id": "7257462d-ca92-4171-bf0d-7c2af4dd03e2",
+    "userId": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "amount": 0.02,
+    "energyWh": 2.6185,
+    "kWh": 0.0026,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-16T02:56:42.227Z",
+    "paidAt": null
+  },
+  {
+    "id": "68fe5750-b241-4fea-ac01-536bcc41a68f",
+    "userId": "6269104b-a3ee-4a3b-96b0-880626ea0db5",
+    "amount": 4,
+    "energyWh": 500.3944,
+    "kWh": 0.5004,
+    "tariff": 8,
+    "status": "UNPAID",
+    "createdAt": "2025-08-16T02:59:13.929Z",
+    "paidAt": null
+  }
+]

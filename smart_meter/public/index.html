@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Smart Energy Meter</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-left"><strong>Smart Energy Meter</strong></div>
+    <div class="header-right" id="headerRight">
+      <button id="btn-login">Login</button>
+    </div>
+  </header>
+  <main class="container">
+    <div class="card controls">
+      <label>Tariff (₹/kWh): <input id="tariff" type="number" step="0.1" value="8"/></label>
+      <button id="btn-save-tariff">Save Tariff</button>
+      <button id="btn-export">Export CSV</button>
+      <button id="btn-admin" style="display:none">Admin Panel</button>
+      <button id="btn-generate-bill">Generate Bill</button>
+      <button id="btn-pay-bill" style="margin-left:6px;">Pay Bill</button>
+    </div>
+    <div class="card cards-row">
+      <div class="metric">Voltage: <span id="voltage">--</span> V</div>
+      <div class="metric">Current: <span id="current">--</span> A</div>
+      <div class="metric">Power: <span id="power">--</span> W</div>
+      <div class="metric">Energy: <span id="energy">--</span> Wh</div>
+      <div class="metric">Cost: ₹<span id="cost">--</span></div>
+    </div>
+    <div class="card">
+      <h2>Live Charts</h2>
+      <div class="charts-grid">
+        <div><canvas id="voltageChart"></canvas></div>
+        <div><canvas id="currentChart"></canvas></div>
+        <div><canvas id="powerChart"></canvas></div>
+        <div><canvas id="energyChart"></canvas></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Devices <button id="btn-add-device" class="small">Add Device</button></h2>
+      <div id="device-list" class="device-list"></div>
+    </div>
+    <div class="card">
+      <h2>History</h2>
+      <button id="btn-refresh-history" class="small">Refresh History</button>
+      <canvas id="historyChart"></canvas>
+    </div>
+  </main>
+  <!-- AUTH MODAL -->
+  <div id="authModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="authTitle">Login / Signup</h3>
+      <input id="authName" placeholder="Full name (signup only)" />
+      <input id="authEmail" placeholder="Email" />
+      <input id="authPassword" placeholder="Password" type="password" />
+      <div style="margin-top:10px">
+        <button id="authLoginBtn">Login</button>
+        <button id="authSignupBtn">Signup</button>
+        <button id="authCloseBtn" class="secondary">Close</button>
+      </div>
+      <div style="margin-top:8px; font-size:0.9rem; color:#666;">(Admin default: [admin@example.com](mailto:admin@example.com) / Admin123)</div>
+      <div style="margin-top:8px">
+        <label>Profile photo: <input type="file" id="profileFile"/></label>
+        <button id="uploadPhoto" class="small">Upload</button>
+      </div>
+    </div>
+  </div>
+  <!-- PROFILE MODAL -->
+  <div id="profileModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Profile</h3>
+      <img id="profilePic" src="" style="width:64px;height:64px;border-radius:50%;object-fit:cover"/>
+      <input id="profileName" placeholder="Full name"/>
+      <input id="profilePhone" placeholder="Phone"/>
+      <input id="profileEB" placeholder="EB Number"/>
+      <input id="profileUpi" placeholder="UPI ID (for QR demo)"/>
+      <textarea id="profileAddress" placeholder="Address"></textarea>
+      <div style="margin-top:8px">
+        <button id="profileSave">Save</button>
+        <button id="profileClose" class="secondary">Close</button>
+        <button id="btn-logout" style="float:right" class="secondary">Sign Out</button>
+      </div>
+    </div>
+  </div>
+  <!-- ADMIN PANEL -->
+  <div id="adminPanel" class="modal hidden">
+    <div class="modal-content wide">
+      <h3>Admin — Users</h3>
+      <table id="adminUsersTable" style="width:100%">
+        <thead><tr><th>Name</th><th>Email</th><th>EB Number</th><th>Phone</th><th>Last Power (W)</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div style="margin-top:12px"><button id="adminClose">Close</button></div>
+    </div>
+  </div>
+  <!-- BILL / PAYMENT MODAL -->
+  <div id="billModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Pay Bill</h3>
+      <div id="billInfo"></div>
+      <div style="margin-top:10px">
+        Payment method:
+        <select id="payMethod"><option value="upi">UPI (QR)</option><option value="netbanking">Netbanking (demo)</option><option value="wallet">Wallet (demo)</option></select>
+      </div>
+      <div id="paymentArea" style="margin-top:10px"></div>
+      <div style="margin-top:10px"><button id="payStart">Start Payment</button><button id="payClose" class="secondary">Close</button></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

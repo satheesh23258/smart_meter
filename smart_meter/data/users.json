@@ -1,0 +1,54 @@
+[
+  {
+    "id": "USR848378",
+    "name": "Admin",
+    "email": "admin@local",
+    "passwordHash": "$2b$10$c.B5E8FktiFTC6x4nuTzl.vKKmOoPfzoKgEM..VFZOQi2PEW9IOqm",
+    "role": "admin",
+    "phone": "",
+    "address": "",
+    "ebNumber": "",
+    "profilePic": null,
+    "devices": [],
+    "lastSeen": "2025-08-15T17:56:03.988Z"
+  },
+  {
+    "id": "6269104b-a3ee-4a3b-96b0-880626ea0db5",
+    "name": "Admin",
+    "email": "admin@example.com",
+    "passwordHash": "$2b$10$/gmzNwWWqQ.k4GMYoNuGj.KS.gwuPI7N4mtWyUjFEB6/UrNLDXAlK",
+    "ebNumber": "ADMIN-EB",
+    "phone": "",
+    "address": "",
+    "upiId": "",
+    "profileUrl": "",
+    "isAdmin": true,
+    "createdAt": "2025-08-15T17:59:15.202Z"
+  },
+  {
+    "id": "b5c8998b-e45f-4eb4-a699-55094f403fe8",
+    "name": "satheesh",
+    "email": "satheeshkanna888@gmail.com",
+    "passwordHash": "$2b$10$idpDbaCLlpmdsnJCjCUdcOC4n0mA8qVazKZQXTByQnb7O9fzHInnu",
+    "ebNumber": "",
+    "phone": "",
+    "address": "",
+    "upiId": "",
+    "profileUrl": "",
+    "isAdmin": false,
+    "createdAt": "2025-08-15T18:03:02.035Z"
+  },
+  {
+    "id": "8b450f36-878b-43cc-a9d7-c43e01210a07",
+    "name": "SATHEESH KANNA",
+    "email": "satheeshkannam.23ece@kongu.edu",
+    "passwordHash": "$2b$10$0RFRb.YGIHOM.8BHy3EzK.BClD0g3gVXeU/Kr/IH9bUjMQn8R0OBy",
+    "ebNumber": "",
+    "phone": "",
+    "address": "",
+    "upiId": "",
+    "profileUrl": "",
+    "isAdmin": false,
+    "createdAt": "2025-08-16T02:58:39.202Z"
+  }
+]
